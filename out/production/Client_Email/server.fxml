@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" style="-fx-border-color: black; -fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="server.ServerController">
+    <children>
+      <Label cacheShape="false" layoutX="9.0" layoutY="14.0" prefHeight="110.0" prefWidth="483.0" style="-fx-background-color: #c9c6c6; -fx-border-color: black;" text=" Server Panel">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+        <Button fx:id="on" layoutX="365.0" layoutY="30.0" mnemonicParsing="false" onAction="#handleOn" prefHeight="26.0" prefWidth="117.0" style="-fx-background-color: white;" text="ON" textFill="#1abf12">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="off" layoutX="365.0" layoutY="30.0" mnemonicParsing="false" onAction="#handleOff" prefHeight="26.0" prefWidth="117.0" style="-fx-background-color: white;" text="OFF" textFill="#dd0909">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+        <Button fx:id="reset" layoutX="364.0" layoutY="75.0" mnemonicParsing="false" onAction="#handleReset" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: white;" text="RESET">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <TableView fx:id="logview" layoutX="9.0" layoutY="137.0" prefHeight="449.0" prefWidth="483.0" style="-fx-border-color: black;">
+        <columns>
+          <TableColumn fx:id="time" prefWidth="126.0" text="Orario" />
+          <TableColumn fx:id="event" minWidth="0.0" prefWidth="356.0" text="Evento" />
+        </columns>
+      </TableView>
+      <Separator layoutX="349.0" layoutY="22.0" orientation="VERTICAL" prefHeight="94.0" prefWidth="6.0" />
+    </children>
+</AnchorPane>
