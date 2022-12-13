@@ -30,3 +30,20 @@ I client e il server dell’applicazione permettono di parallelizzare le attivit
 gestire gli eventuali problemi di accesso a risorse in mutua esclusione. 
 L’applicazione è distribuita attraverso l’uso di Socket Java.
 
+# Server Panel
+
+![alt text](https://github.com/zfeder/client_email/blob/main/image/server.png)
+
+
+# Client Panel
+
+![alt text](https://github.com/zfeder/client_email/blob/main/image/client.png)
+
+
+# New Email Client
+
+![alt text](https://github.com/zfeder/client_email/blob/main/image/new_email.png)
+
+
+
+
