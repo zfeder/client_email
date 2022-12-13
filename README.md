@@ -32,17 +32,21 @@ L’applicazione è distribuita attraverso l’uso di Socket Java.
 
 # Server Panel
 
-![alt text](https://github.com/zfeder/client_email/blob/main/image/server.png)
+<img src="https://github.com/zfeder/client_email/blob/main/image/server.png" width=40% height=40%>
+
 
 
 # Client Panel
 
-![alt text](https://github.com/zfeder/client_email/blob/main/image/client.png)
+<img src="https://github.com/zfeder/client_email/blob/main/image/client.png" width=60% height=60%>
+
 
 
 # New Email Client
 
-![alt text](https://github.com/zfeder/client_email/blob/main/image/new_email.png)
+<img src="https://github.com/zfeder/client_email/blob/main/image/new_email.png" width=60% height=60%>
+
+
 
 
 
