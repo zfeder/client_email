@@ -42,7 +42,7 @@ L’applicazione è distribuita attraverso l’uso di Socket Java.
 
 
 
-# New Email Client
+# New Email
 
 <img src="https://github.com/zfeder/client_email/blob/main/image/new_email.png" width=60% height=60%>
 
