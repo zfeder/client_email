@@ -1,4 +1,4 @@
-# client_email
+# Client Email in JAVA
 
 Applicazione Java che implementa un servizio di posta elettronica organizzato con un mail server che gestisce le caselle di posta elettronica degli utenti 
 e i mail client necessari per permettere agli utenti di accedere alle proprie caselle di posta.
