@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReplyAllController">
+    <children>
+        <Label fx:id="user" layoutX="523.0" layoutY="353.0" prefHeight="19.0" prefWidth="18.0" text="Labeluser" />
+        <Label layoutX="24.0" layoutY="23.0" text="Destinatario">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="36.0" layoutY="60.0" text="Oggetto">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Separator layoutX="23.0" layoutY="100.0" prefHeight="6.0" prefWidth="555.0" />
+        <TextArea fx:id="testoemail" layoutX="23.0" layoutY="125.0" prefHeight="200.0" prefWidth="555.0" style="-fx-background-color: black;" />
+        <Button layoutX="486.0" layoutY="346.0" mnemonicParsing="false" onAction="#handleReplyAllEmail" prefHeight="33.0" prefWidth="92.0" text="Invia" />
+        <Label fx:id="altridestinatari" layoutX="112.0" layoutY="23.0" prefHeight="19.0" prefWidth="447.0" />
+        <Label fx:id="oggetto" layoutX="112.0" layoutY="59.0" prefHeight="19.0" prefWidth="447.0" />
+        <Label fx:id="inserimentoerrore" layoutX="193.0" layoutY="353.0" prefHeight="19.0" prefWidth="215.0" textFill="RED">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+    </children>
+</AnchorPane>

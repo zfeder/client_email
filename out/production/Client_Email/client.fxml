@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.24436090225563908, 0.7117794486215538" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.ClientController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <Label layoutX="8.0" layoutY="9.0" text="Utente">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="usermail" layoutX="63.0" layoutY="11.0" prefHeight="17.0" prefWidth="117.0" text="federico@unito.it" />
+            <Separator layoutX="12.0" layoutY="41.0" prefHeight="3.0" prefWidth="168.0" />
+            <Button layoutX="41.0" layoutY="63.0" mnemonicParsing="false" onAction="#handleNewEmail" prefHeight="34.0" prefWidth="110.0" text="Scrivi email" />
+            <Accordion layoutX="-5.0" layoutY="119.0" prefHeight="380.0" prefWidth="220.0">
+              <panes>
+                <TitledPane animated="false" text="Posta in arrivo">
+                     <content>
+                        <ListView fx:id="listemailricevuta" prefHeight="200.0" prefWidth="200.0" />
+                     </content>
+                </TitledPane>
+                <TitledPane animated="false" text="Posta inviata">
+                     <content>
+                        <ListView fx:id="listemailinviata" prefHeight="200.0" prefWidth="200.0" />
+                     </content>
+                </TitledPane>
+              </panes>
+            </Accordion>
+         </children>
+    </AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <Label layoutX="6.0" layoutY="7.0" prefHeight="128.0" prefWidth="356.0" style="-fx-background-color: #c9c6c6; -fx-border-color: black;" />
+            <Button fx:id="rispondi" layoutX="13.0" layoutY="462.0" mnemonicParsing="false" onAction="#handleReplyEmail" text="Rispondi" />
+            <Button fx:id="inoltra" layoutX="91.0" layoutY="462.0" mnemonicParsing="false" onAction="#handleForwardEmail" prefHeight="25.0" prefWidth="63.0" text="Inoltra" />
+            <Button fx:id="risponditutti" layoutX="175.0" layoutY="462.0" mnemonicParsing="false" onAction="#handleReplyAll" text="Rispondi a tutti" />
+            <Button fx:id="elimina" layoutX="290.0" layoutY="462.0" mnemonicParsing="false" onAction="#handleRemoveEmail" prefHeight="25.0" prefWidth="63.0" text="Elimina" />
+            <Label layoutX="12.0" layoutY="21.0" text="Oggetto">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="11.0" layoutY="50.0" text="Mittente">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="10.0" layoutY="78.0" text="Destinatari">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="12.0" layoutY="105.0" text="Data">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="oggetto" layoutX="62.0" layoutY="21.0" prefHeight="17.0" prefWidth="267.0" />
+            <Label fx:id="mittente" layoutX="65.0" layoutY="50.0" prefHeight="17.0" prefWidth="104.0" />
+            <Label fx:id="data" layoutX="44.0" layoutY="105.0" prefHeight="17.0" prefWidth="220.0" />
+            <Label fx:id="testomail" alignment="TOP_LEFT" contentDisplay="TOP" graphicTextGap="0.0" layoutX="6.0" layoutY="151.0" prefHeight="300.0" prefWidth="356.0" style="-fx-background-color: #c9c6c6; -fx-border-color: black;" text="  " />
+            <Label fx:id="altridestinatari" layoutX="79.0" layoutY="78.0" prefHeight="17.0" prefWidth="273.0" />
+         </children></AnchorPane>
+      <StackPane prefHeight="398.0" prefWidth="91.0">
+         <children>
+            <AnchorPane prefHeight="491.0" prefWidth="223.0">
+               <children>
+                  <ListView fx:id="listnotifiche" layoutY="33.0" prefHeight="465.0" prefWidth="227.0" />
+                  <Label layoutX="82.0" layoutY="5.0" text="Notifiche">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children></StackPane>
+  </items>
+</SplitPane>
